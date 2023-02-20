@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+.newContainer {
+  padding: 50px;
+}
+
+.letterCase {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background-color: dodgerblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}

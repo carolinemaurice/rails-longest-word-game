@@ -1,0 +1,15 @@
+<div class="newContainer">
+
+  <h1>Result</h1>
+
+  <% if @answer == 'not_in_grid' %>
+    <p>Sorry but <strong><%=@word%></strong> can't be built out of <%=@grid.gsub(' ', ', ')%></p>
+  <% elsif @answer == 'not_english_word' %>
+    <p>Sorry but <strong><%=@word%></strong> is not an english word.</p>
+  <% else %>
+    <p><strong>Congratulations!</strong> <%=@word%> is a valid English word!</p>
+  <% end %>
+
+  <%= link_to "Play again", "/new" %>
+
+</div>
